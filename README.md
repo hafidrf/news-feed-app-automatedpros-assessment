@@ -61,20 +61,6 @@ Environment used:
 - Tests included: one business-logic unit test and one component interaction test.
 - Bonus implemented: Bookmarks tab, debounced search, and offline banner.
 
-## Screenshots
-
-### Feed List
-![Feed List](assets/screenshots/Screenshot/screen-feed.jpg)
-
-### Story Detail
-![Story Detail](assets/screenshots/Screenshot/screen-detail.jpg)
-
-### Bookmarks Tab
-![Bookmarks Tab](assets/screenshots/Screenshot/screen-bookmarks.jpg)
-
-### Search Results
-![Search Results](assets/screenshots/Screenshot/screen-search.jpg)
-
 ## Testing
 
 - Unit test (business logic): `sortArticles` sorting behavior.
@@ -109,3 +95,17 @@ For a 12-screen app with shared domains like auth, theme, and cart, I would choo
 ### Q5 - Offline-First UX Strategy
 
 I start with connectivity detection using NetInfo and distinguish between "offline" and "online but request failed" states. For caching, I persist the latest successful payload and timestamp locally (AsyncStorage or database depending on data size), and render cached data immediately when network is unavailable. Cache invalidation uses TTL plus explicit refresh triggers, with stale-while-revalidate behavior where possible. For larger datasets or relational data, I would move to SQLite/WatermelonDB or TanStack Query persistence to get better query-level control. Trade-offs include increased complexity in merge/conflict logic and the need for clear UX messaging about stale data.
+
+## Screenshots
+
+### Feed List
+<img src="assets/screenshots/Screenshot/screen-feed.jpg" alt="Feed List" width="320" />
+
+### Story Detail
+<img src="assets/screenshots/Screenshot/screen-detail.jpg" alt="Story Detail" width="320" />
+
+### Bookmarks Tab
+<img src="assets/screenshots/Screenshot/screen-bookmarks.jpg" alt="Bookmarks Tab" width="320" />
+
+### Search Results
+<img src="assets/screenshots/Screenshot/screen-search.jpg" alt="Search Results" width="320" />
