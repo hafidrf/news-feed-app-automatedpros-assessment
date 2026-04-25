@@ -7,6 +7,7 @@ React Native CLI + TypeScript implementation for the AutomatedPros technical ass
 Environment used:
 - Node: `22.13.1`
 - npm: `10.9.2`
+- OS for development/testing: Windows 10 (Android validated on real device)
 
 1. Install dependencies:
    - `npm install`
@@ -16,7 +17,7 @@ Environment used:
    - `npm run start`
 4. Run app:
    - Android: `npm run android`
-   - iOS: `npm run ios`
+   - iOS: `npm run ios` (run on macOS with Xcode)
 
 ## Architecture Decisions
 
@@ -47,6 +48,32 @@ Environment used:
 - **Swipe-to-remove:** bookmarked items can be removed using right-swipe action (and remove button fallback).
 - **Debounced search:** list screen has client-side debounced filtering (300ms) with no extra API requests.
 - **Offline banner:** app shows a top banner when network connectivity is lost (`@react-native-community/netinfo`).
+
+## Submission Checklist (PDF Mapping)
+
+- App runs on Android and iOS targets (Android validated on real device; iOS project/config included).
+- TypeScript used throughout with strict app models and no unexplained `any`.
+- API integration uses provided Hacker News endpoints (`topstories` + `item/{id}`).
+- Pull-to-refresh and loading/error/empty states are implemented and tested manually.
+- Bookmark persistence survives cold restart via AsyncStorage snapshot (`ids + entities`).
+- List scroll position restores when navigating back from detail screen.
+- README includes setup, architecture decisions, trade-offs, and Section 02 answers.
+- Tests included: one business-logic unit test and one component interaction test.
+- Bonus implemented: Bookmarks tab, debounced search, and offline banner.
+
+## Screenshots
+
+### Feed List
+![Feed List](assets/screenshots/Screenshot/screen-feed.jpg)
+
+### Story Detail
+![Story Detail](assets/screenshots/Screenshot/screen-detail.jpg)
+
+### Bookmarks Tab
+![Bookmarks Tab](assets/screenshots/Screenshot/screen-bookmarks.jpg)
+
+### Search Results
+![Search Results](assets/screenshots/Screenshot/screen-search.jpg)
 
 ## Testing
 
