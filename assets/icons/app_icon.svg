@@ -1,0 +1,69 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="iconClip">
+      <rect x="0" y="0" width="512" height="512" rx="115"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="512" height="512" rx="115" fill="#1A1A2E"/>
+
+  <g clip-path="url(#iconClip)">
+
+    <!-- Left accent bar -->
+    <rect x="0" y="0" width="16" height="512" fill="#4FC3F7" opacity="0.85"/>
+
+    <!-- Header strip -->
+    <rect x="0" y="0" width="512" height="96" fill="#16213E"/>
+
+    <!-- Live indicator dots -->
+    <circle cx="72" cy="48" r="10" fill="#4FC3F7"/>
+    <circle cx="104" cy="48" r="10" fill="#4FC3F7" opacity="0.55"/>
+    <circle cx="136" cy="48" r="10" fill="#4FC3F7" opacity="0.25"/>
+
+    <!-- LIVE badge -->
+    <rect x="376" y="28" width="100" height="42" rx="12" fill="#FF1744"/>
+    <text x="426" y="57" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">LIVE</text>
+
+    <!-- Article 1 headline -->
+    <rect x="56" y="120" width="175" height="22" rx="8" fill="#4FC3F7" opacity="0.9"/>
+
+    <!-- Article 1 body lines -->
+    <rect x="56" y="156" width="390" height="16" rx="6" fill="white" opacity="0.72"/>
+    <rect x="56" y="182" width="390" height="16" rx="6" fill="white" opacity="0.72"/>
+    <rect x="56" y="208" width="295" height="16" rx="6" fill="white" opacity="0.72"/>
+
+    <!-- Thumbnail image placeholder -->
+    <rect x="340" y="120" width="106" height="112" rx="14" fill="#4FC3F7" opacity="0.18"/>
+    <circle cx="393" cy="176" r="28" fill="#4FC3F7" opacity="0.28"/>
+    <rect x="360" y="170" width="66" height="12" rx="5" fill="#4FC3F7" opacity="0.38"/>
+
+    <!-- Divider -->
+    <rect x="56" y="248" width="400" height="2" fill="white" opacity="0.14"/>
+
+    <!-- Article 2 tag -->
+    <rect x="56" y="265" width="130" height="20" rx="7" fill="#FFD740" opacity="0.9"/>
+    <text x="121" y="280" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E" text-anchor="middle">BREAKING</text>
+
+    <!-- Article 2 body lines -->
+    <rect x="56" y="298" width="390" height="15" rx="5" fill="white" opacity="0.6"/>
+    <rect x="56" y="323" width="390" height="15" rx="5" fill="white" opacity="0.6"/>
+    <rect x="56" y="348" width="300" height="15" rx="5" fill="white" opacity="0.6"/>
+
+    <!-- Divider 2 -->
+    <rect x="56" y="382" width="400" height="2" fill="white" opacity="0.14"/>
+
+    <!-- Article 3 tag -->
+    <rect x="56" y="398" width="100" height="20" rx="7" fill="#4FC3F7" opacity="0.75"/>
+    <text x="106" y="413" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#1A1A2E" text-anchor="middle">WORLD</text>
+
+    <!-- Article 3 body lines -->
+    <rect x="56" y="430" width="390" height="14" rx="5" fill="white" opacity="0.5"/>
+    <rect x="56" y="454" width="390" height="14" rx="5" fill="white" opacity="0.5"/>
+    <rect x="56" y="478" width="260" height="14" rx="5" fill="white" opacity="0.5"/>
+
+    <!-- Bottom glow strip -->
+    <rect x="0" y="490" width="512" height="22" fill="#4FC3F7" opacity="0.07"/>
+
+  </g>
+</svg>
